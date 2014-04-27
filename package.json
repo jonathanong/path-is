@@ -1,0 +1,16 @@
+{
+  "name": "path-is",
+  "description": "check what type of path a string is",
+  "version": "1.0.0",
+  "author": {
+    "name": "Jonathan Ong",
+    "email": "me@jongleberry.com",
+    "url": "http://jongleberry.com",
+    "twitter": "https://twitter.com/jongleberry"
+  },
+  "license": "MIT",
+  "repository": "normalize/path-is",
+  "scripts": {
+    "test": "node test.js"
+  }
+}
