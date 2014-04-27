@@ -28,6 +28,9 @@ var paths = {
   },
   '\\\\windows\\server': {
     absolute: true
+  },
+  'data:text/plain;base64,SGVsbG8sIFdvcmxkIQ%3D%3D': {
+    data: true
   }
 }
 

@@ -3,6 +3,10 @@ exports.url = function (uri) {
   return /^(?:\w+:)?\/\//.test(uri)
 }
 
+exports.data = function (uri) {
+  return !uri.indexOf('data:')
+}
+
 exports.absolute = function (uri) {
   return uri
     && /^\//.test(uri) // unix
@@ -13,6 +17,7 @@ exports.absolute = function (uri) {
 exports.relative = function (uri) {
   if (exports.url(uri)) return false
   if (exports.absolute(uri)) return false
+  if (exports.data(uri)) return false
   if (/^\.\//.test(uri)) return true
   return true
 }
