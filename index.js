@@ -18,6 +18,6 @@ exports.relative = function (uri) {
   if (exports.url(uri)) return false
   if (exports.absolute(uri)) return false
   if (exports.data(uri)) return false
-  if (/^\.\//.test(uri)) return true
+  if (/^\.+\//.test(uri)) return true
   return true
 }

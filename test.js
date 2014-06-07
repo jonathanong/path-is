@@ -13,6 +13,9 @@ var paths = {
   './something/long': {
     relative: true
   },
+  '../something/long': {
+    relative: true
+  },
   '/something/long': {
     absolute: true
   },
